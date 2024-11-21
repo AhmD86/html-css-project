@@ -530,7 +530,7 @@ li:hover  .header-hidden{
 .news-item::after{
     position: absolute;
     z-index: 1;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(214, 214, 214);
     transition: .5s;
     width: 100%;
 }
