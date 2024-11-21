@@ -204,7 +204,7 @@ li:hover  .header-hidden{
 .portfolio-item{
     width: 25%;
     float: left;
-    padding: 20px 15px;
+    padding: 20px 20px;
     margin-top: 100px;
     text-align: center;
     border: 7px solid white;
@@ -279,7 +279,7 @@ li:hover  .header-hidden{
     float: left;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 35px;
-    padding: 22px 20px;
+    padding: 20px 20px;
     position: relative;
     text-align: center;
     margin: 50px 0;
@@ -364,7 +364,7 @@ li:hover  .header-hidden{
     height: 90%;
     width: 92%;
     cursor: pointer;
-    padding: 15px  5px;
+    padding: 15px;
     border-radius: 20px;
 }
 .offer-child:hover{
@@ -379,13 +379,14 @@ li:hover  .header-hidden{
 .offer-child h2{
     color:  #000845;
     font-size: 30px;
+    padding-bottom: 15px;
 }
 .offer-child p{
     width: 250px;
     margin-left: 50px;
     line-height: 25px;
-    margin-top: 20px;
     color: rgb(72, 72, 72);
+    padding:0 15px 20px 0;
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 .about-section h1{
@@ -518,6 +519,7 @@ li:hover  .header-hidden{
 }
 .news-item{
     margin-top: 40px;
+    position: relative;
     width: 30%;
     float: left;
     border: 5px solid rgb(255, 255, 255);
@@ -525,14 +527,20 @@ li:hover  .header-hidden{
     text-align: center;
     background-color: #50557c;
 }
-.news-overlay{
-    border-radius: 30px;
-    width: 100%;
-    background-color: rgb(206, 205, 205, 0);
+.news-item::after{
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
     transition: .5s;
+    width: 100%;
 }
-.news-item:hover .news-overlay{
-    background-color: rgb(206, 205, 205);
+.news-item:hover::after{
+    height: 100%;
+}
+.news-overlay{
+    transition: .5s;
+    position: relative;
+    z-index: 2;
 }
 .news-margin{
     margin: 20px 5%;
@@ -675,7 +683,7 @@ li:hover  .header-hidden{
     float: left;
     height: 65%;
     border-radius: 30px;
-    padding:15px 20px;
+    padding:20px 20px;
     background-color: rgb(254, 254, 254);
     border: 7px solid rgb(0, 0, 0);
 }
@@ -685,7 +693,7 @@ li:hover  .header-hidden{
 .pricing-item{
     height:100%;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 30px;
     position: relative;
     border: 5px solid rgb(164, 159, 159);
 }
@@ -706,7 +714,7 @@ li:hover  .header-hidden{
     opacity: 1;
 }
 .price-overlay > h2{
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 25px;
     color: rgb(188, 188, 188);
 }
@@ -840,7 +848,7 @@ li:hover  .header-hidden{
     width: 30%;
     float: left;
     margin: 9% 0;
-    padding: 20px;
+    padding: 30px 20px 20px;
     border: 5px solid rgb(255, 255, 255); 
     position: relative; 
     background-color: rgb(188, 188, 188); 
