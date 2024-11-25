@@ -46,7 +46,7 @@ h1{
     width: 100%;
     background-color: rgb(43, 43, 43);
 }
-/* //////////////////////////////////////////////////////////////////// */
+/* ///////////////   header   /////////// */
 .header{
     width: 99%;
     height: 55px;
@@ -141,7 +141,7 @@ li:hover  .header-hidden{
 .header-hidden div{
     border: 2px solid black;
 }
-/* //////////////////////////////// */
+/* ////////   home   ////// */
 .home-section{
     position: relative;
     height: 80vh;
@@ -198,7 +198,7 @@ li:hover  .header-hidden{
 .home-btn:hover{
     opacity: .6;
 }
-/* ///////////////////////////////////////////// */
+/* //////////   portfolio   //////////// */
 .portfolio-parent{
     margin-left: 7% ;
     overflow: auto;
@@ -271,7 +271,7 @@ li:hover  .header-hidden{
     color: rgb(255, 255, 255);
     transition: .7s;
 }
-/* ///////////////////////////////////////////// */
+/* //////////   technical   ////////// */
 .technical-section span{
     margin-bottom: 50px;
 }
@@ -328,7 +328,7 @@ li:hover  .header-hidden{
     margin: 25px 20px;
     visibility: hidden;
 }
-/* //////////////////////////////////////////// */
+/* //////////   offer   ///////// */
 .offer-section{
     overflow: auto;
 }
@@ -386,11 +386,12 @@ li:hover  .header-hidden{
     padding-bottom: 20px;
 }
 .offer-child p{
-    /* margin-left: 60px; */
+    width: 90%;
+    margin-left: 10%;
     line-height: 25px;
     color: rgb(255, 255, 255);
 }
-/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////    about   //////////////////////////////// */
 .about-section h1{
     margin-left: -30%;
 }
@@ -500,7 +501,7 @@ li:hover  .header-hidden{
     text-decoration: none;
     color:  #9c0606;
 }
-/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////   news   ///////////////////// */
 .view-news{
     background-color: #868686;
 }
@@ -589,7 +590,7 @@ li:hover  .header-hidden{
 .news-item:hover  i  , .news-item:hover a , .news-item:hover h2{
     color: rgb(249, 0, 0);
 }
-/* //////////////////////////////////////////////// */
+/* ////////////   services   //////////// */
 .services-section{
     background-color: #868686;
     padding: 100px 0;
@@ -647,7 +648,7 @@ li:hover  .header-hidden{
 .services-text i{
     line-height: 70px;
 }
-/* ////////////////////////////////////////// */
+/* ////////   pricing-section   //////// */
 .pricing-section{
     background-color: #868686;
     overflow: auto; 
@@ -755,7 +756,7 @@ li:hover  .header-hidden{
     text-transform: capitalize;
     font-weight: bold;
 }
-/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////   about-team   /////////////// */
 .about-team-section{
     background-color: #2a2a2a;
     padding: 100px 0;
@@ -822,7 +823,7 @@ li:hover  .header-hidden{
     margin: 40px 30px;    
     line-height: 25px;
 }
-/* ////////////////////////////////////////////////////////////////////////// */
+/* /////////   team-section   /////////////// */
 .team-section{
     overflow: auto;
 }
