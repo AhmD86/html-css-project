@@ -19,14 +19,14 @@ hr{
 span{
     display: block;
     width: 80px;
-    border: 2px solid rgb(188, 188, 188);
+    border: 2px solid rgb(255, 0, 0);
     margin:10px 47% ;
 }
 h1{
     text-align: center;
     padding-top: 50px;
     font-size: 50px;
-    color: rgb(216, 216, 216);
+    color: rgb(255, 255, 255);
 }
 ::after{
     content: "";
@@ -40,10 +40,7 @@ h1{
 }
 .view , .view-back{
     width: 100%;
-    background-color: #000845;
-}
-.view-back{
-    background-color: rgb(188, 188, 188);
+    background-color: rgb(43, 43, 43);
 }
 /* //////////////////////////////////////////////////////////////////// */
 .header{
@@ -53,7 +50,7 @@ h1{
     position: fixed;
     top: 0;
     z-index: 7;
-    background-color: #000845;
+    background-color: #000000d2;
     border: 1px solid rgb(255, 255, 255);
     border-radius:20px;
 }
@@ -94,7 +91,7 @@ h1{
     padding-top: 3px;
 }
 .header li a{
-    color: white;
+    color: rgb(255, 0, 0);
 }
 .header .right{
     float: right;
@@ -107,12 +104,12 @@ h1{
 }
 .header-hidden{
     position: absolute;
-    background-color: #3c4375;
+    background-color: #fefefe;
     border-radius: 25px;
     width: 180px;
     display: none;
-    border: 5px solid rgb(255, 255, 255);
-    color: #ffffff;
+    border: 5px solid rgb(0, 0, 0);
+    color: #d44b01;
 }
 .header-opacity{
     opacity: .8;
@@ -134,17 +131,19 @@ li:hover  .header-hidden{
     visibility: visible;
     transition: .5s;
 }
+.header-hidden div{
+    border: 2px solid black;
+}
 /* //////////////////////////////// */
 .home-section{
     position: relative;
     height: 80vh;
     width: 90%;
     margin: auto;
-    background-color: #000845;
     background-image: url(../images/ad_personam_slide_01.webp);
     background-size: 90% 110%;
     border-radius: 50px;
-    border: 7px solid white;
+    border: 7px solid rgb(255, 255, 255)
 }
 .home-view{
     height: 100vh;
@@ -164,12 +163,11 @@ li:hover  .header-hidden{
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-60%);
-    color: aliceblue;
     text-align: center;
 }
 .home-text h1{
     font-size: 50px;
-    color: #ffffff;
+    color:rgb(254, 254, 254);
 }
 .home-text p{
     font-size: 20px;
@@ -186,9 +184,9 @@ li:hover  .header-hidden{
     border-radius: 15px;
 }
 .home-btn2{
-    height: 55px;
-    background-color:#00108ab4;
-    color:white;
+    height: 50px;
+    background-color:rgb(195, 0, 0);
+    color: white;
 }
 .home-btn:hover{
     opacity: .6;
@@ -207,14 +205,14 @@ li:hover  .header-hidden{
     padding: 20px 20px;
     margin-top: 100px;
     text-align: center;
-    border: 7px solid white;
+    border: 7px solid rgb(255, 255, 255);
     position: relative;
-    border-radius: 30px;
-    background-color: rgb(188, 188, 188);
+    border-radius: 35px;
+    background-color: rgb(128, 127, 127);
 }
 .portfolio-item::after{
     position: absolute;
-    background-color: #3c4375;
+    background-color: #6b0801;
 }
 .portfolio-item:hover:after{
     width: 100%;
@@ -229,18 +227,18 @@ li:hover  .header-hidden{
 }
 .portfolio-item i{
     font-size:40px;
-    color: rgb(0, 0, 0);
+    color:#9b1107;
     padding-bottom: 20px;
 }
 .portfolio-item h2{
     padding-bottom: 20px;
     font-size: 25px;
     line-height: 20px;
-    color:  #000845;
+    color: #ffffff;
 }
 .portfolio-item p{
     font-size: 18px;
-    color: rgb(72, 72, 72);
+    color: rgb(228, 228, 228);
     padding-bottom: 20px;
     line-height: 30px;
 }
@@ -248,7 +246,7 @@ li:hover  .header-hidden{
     text-decoration: none;
     font-size: 25px;
     padding-bottom: 20px;
-    color: black;
+    color:#6e0a02;
 }
 .portfolio-item a:hover{
     color: grey;
@@ -275,7 +273,7 @@ li:hover  .header-hidden{
 }
 .technical-item{
     width: 27.5%;
-    background-color: #ffffffc0;
+    background-color: rgb(128, 127, 127);
     float: left;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 35px;
@@ -301,10 +299,10 @@ li:hover  .header-hidden{
 .technical-item:hover .technical-text{
     transition:.5s;
     opacity: 1;
-    background-color: #00000084;
+    background-color: #000000c2;
 }
 .technical-text i{
-    color: #ffffff;
+    color: #940000;
     font-size: 40px;
    visibility: hidden;
    padding:0 15px;
@@ -319,7 +317,7 @@ li:hover  .header-hidden{
 }
 .technical-text h2{
     font-size: 30px;
-    color: #ffffff;
+    color: #c90000;
     margin: 25px 20px;
     visibility: hidden;
 }
@@ -339,7 +337,7 @@ li:hover  .header-hidden{
     float: left;
     position: relative;
     margin-top: 70px;
-    background-color: rgb(188, 188, 188);
+    background-color: rgb(128, 127, 127);
 }
 .offer-parent2{
     margin:70px 5% 0 5%;
@@ -350,7 +348,7 @@ li:hover  .header-hidden{
 }
 .offer-parent::after{
     position: absolute;
-    background-color: #3c4375;
+    background-color: #710000;
 }
 .offer-parent:hover:after{
     width: 100%;
@@ -374,30 +372,31 @@ li:hover  .header-hidden{
     margin: 0px 25px 20px 5px;
     float: left;
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: rgb(129, 15, 15);
+}
+.offer-parent:hover .offer-child i{
+    color: #fefefe;
 }
 .offer-child h2{
-    color:  #000845;
+    color:  #000000;
     font-size: 30px;
     padding-bottom: 15px;
 }
 .offer-child p{
-    width: 250px;
-    margin-left: 50px;
+    margin-left: 60px;
     line-height: 25px;
-    color: rgb(72, 72, 72);
-    padding:0 15px 20px 0;
+    color: rgb(255, 255, 255);
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 .about-section h1{
-    color: rgb(0, 0, 0);
     margin-left: -30%;
 }
-.about-section span, .technical-section span{
-    border: 3px solid white;
+.about-section{
+    background-color: #868686;
 }
 .about-section span{
     margin-left: 33%;
+    border: 3px solid rgb(89, 0, 0);
 }
 .about-parent{
     position: relative;
@@ -419,7 +418,7 @@ li:hover  .header-hidden{
     color: rgb(255, 255, 255);
 }
 .about-image i:hover{
-    color:  #000845;
+    color:  #c30101;
 }
 .about-info{
     width: 40%;
@@ -437,20 +436,12 @@ li:hover  .header-hidden{
     letter-spacing: 1px;
     color: white;
 }
-.about-info a{
-    text-decoration: none;
-    font-size: 25px;
-    color:  #000c66;
-}
-.about-info a:hover{
-    color: #ffffff;
-}
 .about-circle{
     height: 40px;
     width: 40px;
-    border: 3px solid rgb(22, 0, 62);
+    border: 3px solid rgb(97, 1, 1);
     border-radius: 50%;
-    color: rgb(20, 1, 57);
+    color: rgb(99, 3, 3);
     font-size: 30px;
     text-align: center;
     margin-left: 150px;
@@ -470,7 +461,7 @@ li:hover  .header-hidden{
     font-size: 30px;
     height: 30px;
     width: 30px;
-    color: rgb(0, 0, 0);
+    color: rgb(94, 0, 0);
 }
 .about-floor div li{
     margin-left: 10px;
@@ -485,7 +476,7 @@ li:hover  .header-hidden{
     width: 30px;
     border-radius: 15px;
     list-style: none;
-    border: 3px solid   #000845;
+    border: 3px solid   #6b0303;
     transition: .2s;
 }
 .about-floor div .about-fixed{
@@ -494,7 +485,7 @@ li:hover  .header-hidden{
     width: 30px;
     border-radius: 15px;
     list-style: none;
-    border: 3px solid  #000845;
+    border: 3px solid  #5f0202;
 }
 .about-floor p{
     font-size: 25px;
@@ -504,15 +495,15 @@ li:hover  .header-hidden{
 }
 .about-floor p a{
     text-decoration: none;
-    color:  #000845;
+    color:  #9c0606;
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
-.view-news h1{
-    color: #000;
+.view-news{
+    background-color: #868686;
 }
 .view-news span{
-    border:3px solid #ffffff;
     margin-bottom: 50px;
+    border: 3px solid rgb(145, 0, 0);
 }
 .news-items{
     overflow: auto;
@@ -522,15 +513,15 @@ li:hover  .header-hidden{
     position: relative;
     width: 30%;
     float: left;
-    border: 5px solid rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 35px;
     text-align: center;
-    background-color: #50557c;
+    background-color: #6d6d6d;
 }
 .news-item::after{
     position: absolute;
     z-index: 1;
-    background-color: rgb(214, 214, 214);
+    background-color: rgba(9, 9, 9, 0.625);
     transition: .5s;
     width: 100%;
 }
@@ -590,26 +581,14 @@ li:hover  .header-hidden{
     color: rgb(255, 255, 255);
 }
 .news-item  i ,  .news-item h2 , .news-item a{
-    color: #cacaca;
+    color: #5c2900;
 }
-.news-item:hover p{
-    color: rgb(72, 72, 72);
-}
-.news-item:hover{
-    border: 5px solid rgb(89, 83, 83);
-}
-.news-item:hover  i  , .news-item:hover a{
-    color: rgb(0, 0, 0);
-}
-.news-item:hover h2{
-    color:  #000845;   
-}
-.news-item:hover img{
-    border:5px solid #5b5a5a;
+.news-item:hover  i  , .news-item:hover a , .news-item:hover h2{
+    color: rgb(249, 0, 0);
 }
 /* //////////////////////////////////////////////// */
 .services-section{
-    background-color: rgb(188, 188, 188);
+    background-color: #868686;
     padding: 100px 0;
 }
 .services-view{
@@ -630,12 +609,11 @@ li:hover  .header-hidden{
     bottom: 0;
     width: 100%;
     background-color:rgba(0, 0, 0, .4);
-    color: #ffffff;
     border-radius: 50px;
 }
 .services-content{
     width: 80%;
-    margin:100px auto;
+    margin:120px auto;
     overflow: auto;
 }
 .services-item{
@@ -648,84 +626,84 @@ li:hover  .header-hidden{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background-color: #d7d7d7;
+    background-color: rgb(224, 221, 221);
     margin:auto ;
     font-size: 30px;
-    color:rgba(16, 16, 83, 0.662);
+    color:#494949;
     margin-bottom: 7px;
 }
 .services-float h2{
-    color: rgb(255, 255, 255);
+    color: rgb(150, 150, 150);
     font-size: 18px;
     line-height: 30px;
 }
 .services-float p{
-    color: rgb(171, 171, 171);
+    color: rgb(213, 213, 213);
     font-size: 20px;
 }
 .services-text i{
     line-height: 70px;
 }
 /* ////////////////////////////////////////// */
-.pricing-container{
-    overflow: auto;
-}
-.pricing-section h1{
-    margin-top: -50px;
-    color: #000;
-}
-.pricing-section span{
-    border: 3px solid rgb(255, 255, 255);
+.pricing-section{
+    background-color: #868686;
+    overflow: auto; 
 }
 .pricing-content{
-    margin-top: 7%;
-    width: 30%;
+    position: relative;
     float: left;
     height: 65%;
     border-radius: 30px;
-    padding:20px 20px;
-    background-color: rgb(254, 254, 254);
-    border: 7px solid rgb(0, 0, 0);
+    background-color: #434343;
+    padding: 15px;
+    width: 30%;
+    margin-top: 7%;
+    text-align: center;
+    outline: 10px solid rgb(255, 255, 255);
 }
 .pricing-content-margin{
     margin: 7% 5%;
 }
-.pricing-item{
-    height:100%;
-    text-align: center;
-    border-radius: 30px;
-    position: relative;
-    border: 5px solid rgb(164, 159, 159);
-}
-.price-overlay{
+.pricing-content::after{
     position: absolute;
+    background-color: #630101dc;
+    opacity: 0;
+    height: 50px;
+    width: 50px;
+}
+.pricing-content:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+}
+.pricing-item{
+    position: absolute;
+    margin-top: 7%;
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 30px;
-    visibility: hidden;
+    width: 100%;
     z-index: 2;
-    opacity: 0;
-    background-color: #000845b9;
 }
 .pricing-item:hover .price-overlay{
     visibility: visible;
     transition: .7s;
     opacity: 1;
 }
-.price-overlay > h2{
-    padding-top: 10px;
-    font-size: 25px;
-    color: rgb(188, 188, 188);
+.pricing-item > h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgb(224, 0, 0);
 }
 .pricing-circle{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background-color:white;
-    margin:10px  auto 10px;
+    background-color:rgb(167, 167, 167);
+    margin:20px  auto;
     padding-top: 5px;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(157, 1, 1);
 }
 .pricing-circle:hover h2{
     display: none;
@@ -737,37 +715,38 @@ li:hover  .header-hidden{
     display: none;
 }
 .pricing-circle:hover p{
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 20px;
     display: block;
+    color: rgb(137, 89, 0);
 }
-.price-overlay a ~ p{
+.pricing-item a ~ p{
     font-size: 25px;
-    color: #bfbfc2;
+    color: #d8d8d8;
     line-height: 35px;
     letter-spacing: 2px;
 }
-.pricing-circle + p{
+.price-info{
     font-size: 23px;
-    color: #bfbfc2;
+    color: #ffffff;
     display: inline;
-    line-height: 30px;
+    line-height: 35px;
     font-weight: bold;
 }
-.price-overlay > a{
-    color:rgb(177, 157, 255);
-    font-size: 17px;
+.pricing-item > a{
+    color:rgb(216, 135, 3);
+    font-size: 23px;
     padding-right: 10px 60px;
     margin-left: 10px;
 }
-.price-overlay > button{
+.pricing-item > button{
     display: block;
-    margin: 10px auto 0;
-    height: 25px;
-    border-radius: 5px;
-    width: 150px;
-    font-size: 15px;
-    background-color: rgb(138, 138, 138);
+    margin:35px auto 0;
+    height: 35px;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 18px;
+    background-color: rgb(209, 109, 3);
     color: #ffffff;
     cursor: pointer;
     border: 0;
@@ -776,14 +755,15 @@ li:hover  .header-hidden{
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 .about-team-section{
-    background-color: #000845;
+    background-color: #2a2a2a;
     padding: 100px 0;
 }
 .about-team-view{
     position: relative;
     height: 55%;
-    background-image:url(../images/temerario.webp);
-    background-size: 100% 120%;
+    background-image:url(../images/ad_personam_slide_02.webp);
+    background-size: 80% 100%;
+    background-position: left;
     background-attachment: fixed;
     border-radius:50px;
     width: 80%;
@@ -813,7 +793,7 @@ li:hover  .header-hidden{
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 2px solid blue;
+    border: 3px solid rgb(201, 0, 0);
     background-color: aliceblue;
     float: left;
     margin: 40px 30px 0 0;
@@ -827,13 +807,13 @@ li:hover  .header-hidden{
     background-size: cover;
 }
 .about-team-item h2{
-    color: rgb(160, 160, 160);
+    color: rgba(203, 65, 1, 0.819);
     padding: 60px 0 5px 50px ;
 }
 .about-team-item a{
     text-decoration: none;
     font-size: 20px;
-    color: rgb(0, 51, 255) ;
+    color: rgb(197, 0, 0) ;
 }
 .about-team-item p{
     color:white;
@@ -851,8 +831,8 @@ li:hover  .header-hidden{
     padding: 30px 20px 20px;
     border: 5px solid rgb(255, 255, 255); 
     position: relative; 
-    background-color: rgb(188, 188, 188); 
-    border-radius: 30px;
+    background-color: rgb(134, 134, 134); 
+    border-radius: 35px;
     text-align: center;
 }
 .team-margin{
@@ -873,7 +853,7 @@ li:hover  .header-hidden{
 }
 .team-image img{
     border-radius: 25px;
-    border: 5px solid rgb(61, 61, 61);
+    border: 5px solid rgb(0, 0, 0);
 }
 .team-overlay{
     position: absolute;
@@ -893,7 +873,7 @@ li:hover  .header-hidden{
     height: 50px;
     margin-left: auto;
     background-color: rgb(50, 50, 50);
-    color:rgb(188, 188, 188);
+    color:rgb(221, 0, 0);
     font-size: 20px;
     border-radius: 15px;
     border: 3px solid rgba(255, 255, 255, 0.705);
@@ -914,9 +894,6 @@ li:hover  .header-hidden{
     padding-bottom: 5px;
     transition: .5s;
 }
-.team-item:hover  h2{
-    color: #ffffff;
-}
 .team-text p{
     color:rgb(255, 255, 255);
     letter-spacing: 2px;
@@ -925,22 +902,22 @@ li:hover  .header-hidden{
     transition: .5s;
 }
 .team-item:hover p{
-    color:rgb(205, 205, 205);
+    color:rgb(202, 31, 31);
 }
 /* ///   foot-section   /// */
 .footer-viewer{
-    height: 50vh;
+    height: 45vh;
     position: relative; 
     z-index: -2;
     padding-left:27%;
-    background-color: rgb(188, 188, 188);
+    background-color: rgba(0, 0, 0, 0.547);
 }
 .footer-view{
     width: 100vh;
     height: 50vh;
     text-align: center;
-    padding-top: 40px;
-    background-color: rgb(188, 188, 188);
+    padding-top: 90px;
+    /* background-color: rgba(0, 0, 0, 0.542); */
     position: fixed;
     bottom: 0;
 } 
@@ -950,7 +927,7 @@ li:hover  .header-hidden{
     width:250px;
     height:150px;
     margin: auto;
-    outline: 5px solid white;
+    outline: 5px solid rgb(223, 223, 223);
 }
 .footer-overlay{
     position: absolute;
@@ -967,8 +944,8 @@ li:hover  .header-hidden{
     border-radius: 50%;
     float: left;
     border: 3px;
-    background-color:#000845a5;
-    outline: 5px solid white;
+    background-color:#ffffff;
+    outline: 5px solid rgb(137, 137, 137);
     margin: 5px;
 }
 .footer-a-con{
@@ -981,12 +958,12 @@ li:hover  .header-hidden{
     font-size: 25px; 
 }
 .footer-a a i{
-    color:#ffffff ;
+    color:#ea0505 ;
     line-height: 50px;
 }
 .footer-view p{
     text-transform: uppercase;
-    color: #000845;
+    color: #ffffff;
     font-size: 13px;
 }
 .foot-a12{
@@ -994,5 +971,5 @@ li:hover  .header-hidden{
 }
 .footer-a:hover{
     cursor: pointer;
-    background-color:#000845;
+    background-color:#595959;
 }
