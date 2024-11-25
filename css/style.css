@@ -9,6 +9,10 @@ body{
     position: relative;
     z-index: -2;
 }
+.container{
+    width: 80%;
+    margin: auto;
+}
 a{
     text-decoration: none;
 }
@@ -50,7 +54,7 @@ h1{
     position: fixed;
     top: 0;
     z-index: 7;
-    background-color: #000000d2;
+    background-color: #242424;
     border: 1px solid rgb(255, 255, 255);
     border-radius:20px;
 }
@@ -110,6 +114,9 @@ h1{
     display: none;
     border: 5px solid rgb(0, 0, 0);
     color: #d44b01;
+}
+.list-item-hidden{
+    color: #ac3d01;
 }
 .header-opacity{
     opacity: .8;
@@ -277,7 +284,7 @@ li:hover  .header-hidden{
     float: left;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 35px;
-    padding: 20px 20px;
+    padding: 25px 20px;
     position: relative;
     text-align: center;
     margin: 50px 0;
@@ -324,10 +331,6 @@ li:hover  .header-hidden{
 /* //////////////////////////////////////////// */
 .offer-section{
     overflow: auto;
-}
-.container{
-    width: 80%;
-    margin: auto;
 }
 .offer-parent{
     width: 30%;
@@ -380,10 +383,10 @@ li:hover  .header-hidden{
 .offer-child h2{
     color:  #000000;
     font-size: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .offer-child p{
-    margin-left: 60px;
+    /* margin-left: 60px; */
     line-height: 25px;
     color: rgb(255, 255, 255);
 }
@@ -613,7 +616,7 @@ li:hover  .header-hidden{
 }
 .services-content{
     width: 80%;
-    margin:120px auto;
+    margin:100px auto;
     overflow: auto;
 }
 .services-item{
@@ -655,11 +658,10 @@ li:hover  .header-hidden{
     height: 65%;
     border-radius: 30px;
     background-color: #434343;
-    padding: 15px;
     width: 30%;
     margin-top: 7%;
     text-align: center;
-    outline: 10px solid rgb(255, 255, 255);
+    border: 7px solid rgb(255, 255, 255);
 }
 .pricing-content-margin{
     margin: 7% 5%;
@@ -678,12 +680,12 @@ li:hover  .header-hidden{
 }
 .pricing-item{
     position: absolute;
-    margin-top: 7%;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 2;
+    padding: 18px;
 }
 .pricing-item:hover .price-overlay{
     visibility: visible;
@@ -691,7 +693,7 @@ li:hover  .header-hidden{
     opacity: 1;
 }
 .pricing-item > h2{
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 30px;
     color: rgb(224, 0, 0);
 }
@@ -700,7 +702,7 @@ li:hover  .header-hidden{
     width: 70px;
     border-radius: 50%;
     background-color:rgb(167, 167, 167);
-    margin:20px  auto;
+    margin:10px  auto;
     padding-top: 5px;
     border: 2px solid rgb(255, 255, 255);
     color: rgb(157, 1, 1);
@@ -715,10 +717,10 @@ li:hover  .header-hidden{
     display: none;
 }
 .pricing-circle:hover p{
-    font-size: 18px;
+    font-size: 23px;
     padding-top: 20px;
     display: block;
-    color: rgb(137, 89, 0);
+    color: rgb(114, 74, 0);
 }
 .pricing-item a ~ p{
     font-size: 25px;
@@ -741,7 +743,7 @@ li:hover  .header-hidden{
 }
 .pricing-item > button{
     display: block;
-    margin:35px auto 0;
+    margin:5px auto 0;
     height: 35px;
     border-radius: 10px;
     width: 200px;
@@ -906,7 +908,7 @@ li:hover  .header-hidden{
 }
 /* ///   foot-section   /// */
 .footer-viewer{
-    height: 45vh;
+    height: 50vh;
     position: relative; 
     z-index: -2;
     padding-left:27%;
@@ -916,8 +918,7 @@ li:hover  .header-hidden{
     width: 100vh;
     height: 50vh;
     text-align: center;
-    padding-top: 90px;
-    /* background-color: rgba(0, 0, 0, 0.542); */
+    padding-top: 50px;
     position: fixed;
     bottom: 0;
 } 
