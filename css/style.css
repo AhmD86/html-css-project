@@ -153,7 +153,6 @@ li:hover  .header-hidden{
     border: 7px solid rgb(255, 255, 255)
 }
 .home-view{
-    /* height: 100vh; */
     padding:90px 0;
     background-color: #242424;
 }
@@ -310,10 +309,10 @@ li:hover  .header-hidden{
     background-color: #000000c2;
 }
 .technical-text i{
-    color: #c4a1a1;
+    color: #ffffff;
     font-size: 40px;
-   visibility: hidden;
-   padding:0 15px;
+    visibility: hidden;
+    padding:0 15px;
 }
 .technical-item:hover .technical-text i{
     visibility: visible;
@@ -325,7 +324,7 @@ li:hover  .header-hidden{
 }
 .technical-text h2{
     font-size: 30px;
-    color: #d2d2d2;
+    color: #ffffff;
     margin: 25px 20px;
     visibility: hidden;
 }
