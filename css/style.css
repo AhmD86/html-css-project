@@ -16,19 +16,15 @@ body{
 a{
     text-decoration: none;
 }
-hr{
-    height: 10px;
-    background-color: #ffffff;
-}
 span{
     display: block;
     width: 80px;
-    border: 2px solid rgb(255, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
     margin:10px 47% ;
 }
 h1{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
     font-size: 50px;
     color: rgb(255, 255, 255);
 }
@@ -44,7 +40,7 @@ h1{
 }
 .view , .view-back{
     width: 100%;
-    background-color: #868686;
+    background-color: #000845;
 }
 /* ///////////////   header   /////////// */
 .header{
@@ -54,7 +50,7 @@ h1{
     position: fixed;
     top: 0;
     z-index: 7;
-    background-color: #242424;
+    background-color:  #000845;
     border: 1px solid rgb(255, 255, 255);
     border-radius:10px;
 }
@@ -70,7 +66,7 @@ h1{
     position: absolute;
     font-size:20px;
     margin: 5px 15px;
-    color: #c50202;
+    color: #000000;
 }
 .header .left{
     float: left;
@@ -108,15 +104,12 @@ h1{
 }
 .header-hidden{
     position: absolute;
-    background-color: #c8c8c8;
+    background-color:#3c4375;
     border-radius: 25px;
     width: 180px;
     display: none;
-    border: 5px solid rgb(0, 0, 0);
-    color: #d44b01;
-}
-.list-item-hidden{
-    color: #ac3d01;
+    border: 5px solid rgb(247, 246, 246);
+    color:white;
 }
 .header-opacity{
     opacity: .8;
@@ -129,7 +122,7 @@ li:hover  .header-hidden{
     visibility: hidden;
     width:0;
     margin-top: -20px;
-    border: 2px solid  rgb(255, 0, 0);
+    border: 2px solid  rgb(255, 255, 255);
     border-radius: 3px;
     margin-top: -15px;
 }
@@ -138,23 +131,19 @@ li:hover  .header-hidden{
     visibility: visible;
     transition: .5s;
 }
-.header-hidden div{
-    border: 2px solid black;
-}
 /* ////////   home   ////// */
 .home-section{
     position: relative;
     height: 80vh;
     width: 90%;
-    margin: auto;
+    margin:0 auto -20px;
     background-image: url(../images/ad_personam_slide_01.webp);
     background-size: 90% 110%;
     border-radius: 50px;
     border: 7px solid rgb(255, 255, 255)
 }
 .home-view{
-    padding:90px 0;
-    background-color: #242424;
+    padding:80px 0 0;
 }
 .home-overlay{
     position: absolute;
@@ -189,36 +178,36 @@ li:hover  .header-hidden{
     width: 150px;
     font-size: 20px;
     border-radius: 15px;
+    border: 2px solid rgb(37, 37, 37);
 }
 .home-btn2{
     height: 50px;
-    background-color:rgb(195, 0, 0);
+    background-color: #000845;
     color: white;
+    border: 2px solid white;
 }
 .home-btn:hover{
     opacity: .6;
 }
 /* //////////   portfolio   //////////// */
 .portfolio-parent{
-    margin-left: 7% ;
+    margin-left: 8% ;
     overflow: auto;
-}
-.portfolio-section{
-    padding: 10px 0 50px 0;
 }
 .portfolio-item{
     width: 25%;
     float: left;
-    padding: 20px 20px;
-    margin-top: 100px;
+    padding: 20px;
+    margin-top: 20px;
     text-align: center;
     border: 7px solid rgb(255, 255, 255);
     position: relative;
     border-radius: 35px;
-    background-color: #242424;}
+    background-color: rgb(188, 188, 188);
+}
 .portfolio-item::after{
     position: absolute;
-    background-color: #6b0801;
+    background-color: #3c4375;
 }
 .portfolio-item:hover:after{
     width: 100%;
@@ -229,22 +218,22 @@ li:hover  .header-hidden{
     z-index: 2;
 }
 .portfolio-margin{
-    margin: 100px 7.5% 0;
+    margin: 20px 7.5% 0;
 }
 .portfolio-item i{
     font-size:40px;
-    color:#ffffff;
+    color: rgb(0, 0, 0);
     padding-bottom: 20px;
 }
 .portfolio-item h2{
     padding-bottom: 20px;
     font-size: 25px;
     line-height: 20px;
-    color: #ffffff;
+    color:  #000845;
 }
 .portfolio-item p{
     font-size: 18px;
-    color: rgb(228, 228, 228);
+    color: rgb(72, 72, 72);
     padding-bottom: 20px;
     line-height: 30px;
 }
@@ -252,7 +241,7 @@ li:hover  .header-hidden{
     text-decoration: none;
     font-size: 25px;
     padding-bottom: 20px;
-    color:#ff0000;
+    color:#000000;
 }
 .portfolio-item a:hover{
     color: grey;
@@ -271,26 +260,28 @@ li:hover  .header-hidden{
     transition: .7s;
 }
 /* //////////   technical   ////////// */
-.technical-section span{
-    margin-bottom: 50px;
-    color: #6b0303;
+.technical-section{
+    margin-top: -20px;
 }
 .technical-items{
     overflow: auto;
 }
 .technical-item{
     width: 27.5%;
-    background-color: #242424;
+    background-color: rgb(188, 188, 188);
     float: left;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 35px;
     padding: 25px 20px;
     position: relative;
     text-align: center;
-    margin: 50px 0;
+    margin:20px 0;
 }
 .technical-margin{
-    margin:50px 8.75%;
+    margin:20px 4.75%;
+}
+.technical-first-margin{
+    margin-left: 4%;
 }
 .technical-text{
     position: absolute;
@@ -331,6 +322,7 @@ li:hover  .header-hidden{
 /* //////////   offer   ///////// */
 .offer-section{
     overflow: auto;
+    margin-top: -30px;
 }
 .offer-parent{
     width: 30%;
@@ -339,19 +331,19 @@ li:hover  .header-hidden{
     border: 7px solid rgb(255, 255, 255);
     float: left;
     position: relative;
-    margin-top: 70px;
-    background-color: #242424;
+    margin-top: 20px;
+    background-color: rgb(188, 188, 188);
 }
 .offer-parent2{
-    margin:70px 5% 0 5%;
+    margin:20px 5% 0 5%;
 }
 .offer-parent5 , .offer-parent4 , .offer-parent6{
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .offer-parent::after{
     position: absolute;
-    background-color: #ffffffdd;
+    background-color: #3c4375;
 }
 .offer-parent:hover:after{
     width: 100%;
@@ -375,13 +367,13 @@ li:hover  .header-hidden{
     margin: 0px 25px 20px 5px;
     float: left;
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .offer-parent:hover .offer-child i{
-    color: #fefefe;
+    color: #000000;
 }
 .offer-child h2{
-    color:  #ff0000;
+    color:  #000845;
     font-size: 30px;
     padding-bottom: 20px;
 }
@@ -389,18 +381,19 @@ li:hover  .header-hidden{
     width: 90%;
     margin-left: 10%;
     line-height: 25px;
-    color: rgb(255, 255, 255);
+    color: rgb(72, 72, 72);
 }
 /* //////////    about   //////////////////////////////// */
-.about-section h1{
-    margin-left: -30%;
-}
 .about-section{
-    background-color: #868686;
+    background-color: rgb(188, 188, 188) ;
 }
-.about-section span{
+.about-section h1{
+    margin:0px 0 0 -30%;
+    padding-top: 20px;
+    color: #000000;
+}
+.about-section .about-span{
     margin-left: 33%;
-    border: 3px solid rgb(89, 0, 0);
 }
 .about-parent{
     position: relative;
@@ -422,7 +415,7 @@ li:hover  .header-hidden{
     color: rgb(255, 255, 255);
 }
 .about-image i:hover{
-    color:  #c30101;
+    color:  #000000;
 }
 .about-info{
     width: 40%;
@@ -431,6 +424,7 @@ li:hover  .header-hidden{
 .about-info h2{
     font-size: 30px;
     padding-bottom: 30px;
+    color: #202020;
 }
 .about-info p{
     padding-bottom:10px;
@@ -443,9 +437,9 @@ li:hover  .header-hidden{
 .about-circle{
     height: 40px;
     width: 40px;
-    border: 3px solid #9c0606;
+    border: 3px solid #000000;
     border-radius: 50%;
-    color: #9c0606;
+    color: #000000;
     font-size: 30px;
     text-align: center;
     margin-left: 150px;
@@ -458,14 +452,14 @@ li:hover  .header-hidden{
 .about-floor{
     width: 40%;
     margin-left: 40%;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
 .about-floor div{
     float: left;
     font-size: 30px;
     height: 30px;
     width: 30px;
-    color: #9c0606;
+    color: #000000;
 }
 .about-floor div li{
     margin-left: 10px;
@@ -480,7 +474,7 @@ li:hover  .header-hidden{
     width: 30px;
     border-radius: 15px;
     list-style: none;
-    border: 3px solid  #9c0606;
+    border: 3px solid  #000000;
     transition: .2s;
 }
 .about-floor div .about-fixed{
@@ -489,22 +483,22 @@ li:hover  .header-hidden{
     width: 30px;
     border-radius: 15px;
     list-style: none;
-    border: 3px solid  #9c0606 ;
+    border: 3px solid  #000000 ;
 }
 .about-floor p{
     font-size: 25px;
     padding:3px 0 0 30px;
     float: left;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .about-floor p a{
     text-decoration: none;
-    color:  #9c0606;
+    color:  #000000;
 }
 /* ////////////   services   //////////// */
 .services-section{
-    background-color: #242424;
-    padding: 100px 0;
+    background-color: rgb(188, 188, 188);
+    padding:0 0 40px 0;
 }
 .services-view{
     background-image:url(../images/Lamborghini-Aventador-Ultimae.jpg);
@@ -528,7 +522,7 @@ li:hover  .header-hidden{
 }
 .services-content{
     width: 80%;
-    margin:100px auto;
+    margin: 100px auto;
     overflow: auto;
 }
 .services-item{
@@ -541,9 +535,9 @@ li:hover  .header-hidden{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(192, 192, 192);
     margin:auto ;
-    border: 2px solid red;
+    border: 2px solid rgb(255, 255, 255);
     font-size: 30px;
     color:#646161;
     margin-bottom: 7px;
@@ -554,7 +548,7 @@ li:hover  .header-hidden{
     line-height: 30px;
 }
 .services-float p{
-    color: rgb(219, 54, 4);
+    color: rgb(154, 152, 152);
     font-size: 20px;
 }
 .services-text i{
@@ -562,7 +556,6 @@ li:hover  .header-hidden{
 }
 /* ////////   pricing-section   //////// */
 .pricing-section{
-    background-color: #868686;
     overflow: auto; 
 }
 .pricing-content{
@@ -570,18 +563,18 @@ li:hover  .header-hidden{
     float: left;
     height: 65%;
     border-radius: 30px;
-    background-color: #434343;
+    background-color: rgb(188, 188, 188);
     width: 30%;
-    margin-top: 7%;
+    margin-top: 40px;
     text-align: center;
     border: 7px solid rgb(255, 255, 255);
 }
 .pricing-content-margin{
-    margin: 7% 5%;
+    margin: 40px 5%;
 }
 .pricing-content::after{
     position: absolute;
-    background-color: #630101dc;
+    background-color: #3c4375;
     opacity: 0;
     height: 50px;
     width: 100%;
@@ -608,23 +601,26 @@ li:hover  .header-hidden{
 .pricing-item > h2{
     margin-bottom: 15px;
     font-size: 30px;
-    color: rgb(224, 0, 0);
+    color: rgb(0, 0, 0);
 }
 .pricing-circle{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background-color:rgb(167, 167, 167);
+    background-color:rgb(255, 255, 255);
     margin:15px  auto;
     padding-top: 5px;
-    border: 2px solid rgb(255, 255, 255);
-    color: rgb(157, 1, 1);
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 .pricing-circle:hover h2{
     display: none;
 }
 .pricing-circle h2{
     font-size: 50px;
+}
+.pricing-item:hover h2 , .pricing-item:hover p{
+    color: #cacaca ;
 }
 .pricing-circle p{
     display: none;
@@ -633,23 +629,26 @@ li:hover  .header-hidden{
     font-size: 23px;
     padding-top: 20px;
     display: block;
-    color: rgb(114, 74, 0);
+    color: rgb(61, 61, 61)
 }
 .pricing-item a ~ p{
     font-size: 25px;
-    color: #d8d8d8;
+    color: #000000;
     line-height: 35px;
     letter-spacing: 2px;
 }
 .price-info{
     font-size: 23px;
-    color: #ffffff;
+    color: #414141;
     display: inline;
     line-height: 35px;
     font-weight: bold;
 }
+.pricing-item:hover .price-info{
+    color: white;
+}
 .pricing-item > a{
-    color:rgb(216, 135, 3);
+    color:rgb(23, 31, 104);
     font-size: 23px;
     padding-right: 10px 60px;
     margin-left: 10px;
@@ -661,7 +660,7 @@ li:hover  .header-hidden{
     border-radius: 10px;
     width: 200px;
     font-size: 18px;
-    background-color: rgb(209, 109, 3);
+    background-color: rgb(0, 6, 77);
     color: #ffffff;
     cursor: pointer;
     border: 0;
@@ -670,14 +669,14 @@ li:hover  .header-hidden{
 }
 /* /////////////   about-team   /////////////// */
 .about-team-section{
-    background-color: #2a2a2a;
-    padding: 100px 0;
+    background-color: #000845;
+    padding:0 0 40px 0;
 }
 .about-team-view{
     position: relative;
     height: 55%;
-    background-image:url(../images/ad_personam_slide_02.webp);
-    background-size: 80% 100%;
+    background-image:url(../images/temerario.webp);
+    background-size: 100% 100%;
     background-position: left;
     background-attachment: fixed;
     border-radius:50px;
@@ -692,7 +691,7 @@ li:hover  .header-hidden{
     width: 100%;
     height: 100%;
     border-radius: 50px;
-    background-color: rgb(0, 0, 0, .7);
+    background-color: rgb(0, 0, 0, .5);
 }
 .about-team-content{
     overflow: auto;
@@ -708,7 +707,7 @@ li:hover  .header-hidden{
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 3px solid rgb(201, 0, 0);
+    border: 3px solid rgb(0, 23, 201);
     background-color: aliceblue;
     float: left;
     margin: 40px 30px 0 0;
@@ -728,7 +727,7 @@ li:hover  .header-hidden{
 .about-team-item a{
     text-decoration: none;
     font-size: 20px;
-    color: rgb(197, 0, 0) ;
+    color: rgb(6, 22, 255) ;
 }
 .about-team-item p{
     color:white;
@@ -738,20 +737,24 @@ li:hover  .header-hidden{
 /* /////////   team-section   /////////////// */
 .team-section{
     overflow: auto;
+    background-color: rgb(188, 188, 188);
+}
+.team-section h1{
+    color: #000000;
 }
 .team-item{
     width: 30%;
     float: left;
-    margin: 9% 0;
+    margin: 20px 0;
     padding: 30px 20px 20px;
     border: 5px solid rgb(255, 255, 255); 
     position: relative; 
-    background-color: #242424;
+    background-color: #3c4375;
     border-radius: 35px;
     text-align: center;
 }
 .team-margin{
-    margin:9% 5% ;
+    margin:20px 5% ;
 }
 .team-item::after{
     position: absolute;
@@ -768,7 +771,7 @@ li:hover  .header-hidden{
 }
 .team-image img{
     border-radius: 25px;
-    border: 5px solid rgb(195, 191, 191);
+    border: 5px solid rgb(0, 0, 0);
 }
 .team-overlay{
     position: absolute;
@@ -787,11 +790,11 @@ li:hover  .header-hidden{
     width: 60px;
     height: 50px;
     margin-left: auto;
-    background-color: rgb(50, 50, 50);
-    color:rgb(221, 0, 0);
+    background-color: #3c4375;
+    color:rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 15px;
-    border: 3px solid rgba(255, 255, 255, 0.705);
+    border: 3px solid rgb(0, 0, 0);
 }
 .team-overlay a i{
     line-height: 50px;
@@ -818,34 +821,38 @@ li:hover  .header-hidden{
     transition: .5s;
 }
 .team-item:hover p{
-    color:rgb(255, 0, 0);
+    color:rgb(43, 0, 255);
 }
 /* /////////////////   news   ///////////////////// */
 .view-news{
-    background-color: #868686;
+    background-color: rgb(188, 188, 188);
+    margin-top: -40px;
+}
+.view-news h1{
+    color: #000000;
 }
 .view-news span{
-    margin-bottom: 50px;
-    border: 3px solid rgb(145, 0, 0);
+    margin-bottom: 20px;
+    border: 3px solid rgb(255, 255, 255);
 }
 .news-items{
     overflow: auto;
 }
 .news-item{
     margin-top: 40px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     position: relative;
     width: 30%;
     float: left;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 35px;
     text-align: center;
-    background-color: #242424;
+    background-color: #3c4375;
 }
 .news-item::after{
     position: absolute;
     z-index: 1;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(156, 156, 156);
     transition: .5s;
     width: 100%;
 }
@@ -869,9 +876,6 @@ li:hover  .header-hidden{
     width:80%; 
     border-radius: 35px;
     border:5px solid #ffffff;
-}
-.news-item:hover img, .news-item:hover {
-    border: 5px solid black;
 }
 .news-image ul{
     padding-top:10px;
@@ -907,14 +911,11 @@ li:hover  .header-hidden{
 .news-item p , .news-item li p{
     color: rgb(255, 255, 255);
 }
-.news-item:hover p , .news-item:hover li p{
-    color: #646161;
-}
 .news-item  i ,  .news-item h2 , .news-item a{
-    color: #ff0000;
+    color: #a1a1a1;
 }
 .news-item:hover  i  , .news-item:hover a , .news-item:hover h2{
-    color: rgb(0, 0, 0);
+    color: rgb(2, 1, 60);
 }
 /* ///   foot-section   /// */
 .footer-viewer{
@@ -922,7 +923,7 @@ li:hover  .header-hidden{
     position: relative; 
     z-index: -2;
     padding-left:27%;
-    background-color: #242424;
+    background-color: #000845;
 }
 .footer-view{
     width: 100vh;
@@ -946,7 +947,7 @@ li:hover  .header-hidden{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.252);
     border-radius: 30px;
 }
 .footer-a{
@@ -969,7 +970,7 @@ li:hover  .header-hidden{
     font-size: 25px; 
 }
 .footer-a a i{
-    color:#ea0505 ;
+    color:#090041 ;
     line-height: 50px;
 }
 .footer-view p{
@@ -982,5 +983,5 @@ li:hover  .header-hidden{
 }
 .footer-a:hover{
     cursor: pointer;
-    background-color:#595959;
+    background-color:#dfdfdf;
 }
